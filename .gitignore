@@ -1,0 +1,4 @@
+mochawesome/*
+mochawesome-report/*
+node_modules/*
+src/results/*
