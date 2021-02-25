@@ -7,6 +7,7 @@ A Simple npm library that returns a word., with all chars reverted, and then it 
 `npm i PetrNemec --save`
 
 Then...
+
 ...
 import {run} from "PetrNemec"
 
