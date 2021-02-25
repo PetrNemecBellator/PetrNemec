@@ -53,20 +53,23 @@ class Save{
 
 var input: string;
 var output:string;
+function run(){
+    rl.question('Type your word:', function (answer) {
 
-rl.question('Type your word:', function (answer) {
+        if(isAlphanumeric(answer)){
+            console.log(comandExecution(answer));
+            rl.close();
 
-    if(isAlphanumeric(answer)){
-        console.log(comandExecution(answer));
-        rl.close();
+        }else{
+            console.log("input is not alphanumeric")
+            rl.close();
+        }
 
-    }else{
-        console.log("input is not alphanumeric")
-        rl.close();
-    }
+        
+    });
+}
 
-    
-});
+run();
 
 function isAlphanumeric(word):boolean{
     return /^[a-zA-Z0-9_]*$/.test(word);
@@ -86,7 +89,7 @@ function comandExecution(answer):string{
         if (/[A-Z]/.test(char)){
 
             inverted += char.toLocaleLowerCase();
-            
+
         }else if (/[a-z]/.test(char)){
 
             inverted += char.toLocaleUpperCase();
@@ -113,4 +116,5 @@ function comandExecution(answer):string{
 exports.Save = Save;
 exports.comandExecution =  comandExecution;
 exports.isAlphanumeric = isAlphanumeric;
+exports.run =run;
 
