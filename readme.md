@@ -8,10 +8,10 @@ A Simple npm library that returns a word., with all chars reverted, and then it 
 
 Then...
 
-```
+`
 import {run} from "PetrNemec"
 
 console.log(run("Word"))
-```
+`
 
 `output:DROw`
