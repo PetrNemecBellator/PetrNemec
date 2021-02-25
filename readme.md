@@ -1,6 +1,6 @@
 # What is it?
 
-A Simple npm library that returns a word., with all chars reverted, and then it also reverts lower keys to upper keys and vice versa.
+A Simple npm library that returns a word.The word has all chars reversed, and lower keys are reversed with upper keys and vice versa.
 
 # Instaltation
 
@@ -8,8 +8,9 @@ A Simple npm library that returns a word., with all chars reverted, and then it 
 
 Then...
 
-`import {run} from "PetrNemec"
-
-console.log(run("Word"))`
+```
+import {run} from "PetrNemec"
+console.log(run("Word"))
+```
 
 `output:DROw`
