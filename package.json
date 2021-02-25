@@ -1,8 +1,9 @@
 {
   "name": "PetrNemec",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Simple npm library that returns a word., with all chars reverted, and then it also reverts lower keys to upper keys and vice versa.",
   "main": "./src/results/run.js/",
+  "homepage": "https://github.com/PetrNemecBellator/PetrNemec",
   "scripts": {
     "start": "./src/build.js",
     "build": "tsc  ./src/run.ts  --outDir ./src/results/",
