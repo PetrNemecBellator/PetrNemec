@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "A Simple npm library that returns a word., with all chars reverted, and then it also reverts lower keys to upper keys and vice versa.",
   "main": "./src/results/run.js/",
-  "homepage": "https://github.com/PetrNemecBellator/PetrNemec",
+  "bin":"./src/results/run.js/",
+
+  "homepage": "https://github.com/PetrNemecBellator/PetrNemec/readme.md",
   "scripts": {
     "run": "node ./src/results/run.js",
     "build": "tsc  ./src/run.ts  --outDir ./src/results/",
     "test": "mocha ./specs/test.spec.js --reporter mochawesome"
   },
-  "publishConfig": {
-    "registry": "https://www.npmjs.com/settings/petrnemec-packages/developers"
-  },
+ 
   "keywords": [],
   "author": "Petr Nemec",
   "license": "ISC",
@@ -25,9 +25,10 @@
     "typescript": "^4.2.2"
   },
   "dependencies": {},
+
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PetrNemecBellator/PetrNemec.git"
+    "url": "git+https://github.com/PetrNemecBellator/reverser.git"
   },
   "bugs": {
     "url": "https://github.com/PetrNemecBellator/PetrNemec/issues"
